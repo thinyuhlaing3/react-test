@@ -5,8 +5,9 @@ import "./App.css";
 
 const App = () => {
   const testArray = [1, 2, 3, 4, 5];
+  let num = 1
   const handleClick = () => {
-    console.log("clicked");
+    return num = num + 1
   };
   return (
     <div> 
@@ -19,7 +20,8 @@ const App = () => {
       {testArray.map((item) => (
         <h3>{item}</h3>
       ))}
-      <button onClick={handleClick}>Click Me</button>
+      <p>{num}</p>
+      <button onClick={handleClick}>Increase</button>
       <h3 className="color"> HELLO </h3>
       <h3 style={{ color: "white", width: 200, backgroundColor: "blueviolet" }}>
         WORLD

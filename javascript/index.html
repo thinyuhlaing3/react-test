@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Increase</title>
+</head>
+
+<body>
+    <p id="numberDisplay">0</p>
+    <button id="increaseButton">Increase</button>
+
+    <script>
+        const numberDisplay = document.getElementById('numberDisplay');
+        const increaseButton = document.getElementById('increaseButton');
+
+        let number = 0;
+
+        function increaseNumber() {
+            number = number + 1;
+            numberDisplay.textContent = number;
+        }
+
+        // Add event listener to the button to trigger increaseNumber when clicked
+        increaseButton.addEventListener('click', increaseNumber);
+    </script>
+</body>
+
+</html>
