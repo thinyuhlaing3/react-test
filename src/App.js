@@ -1,6 +1,7 @@
 import User from "./components/Person";
 import Avatar from "./components/Avatar";
 import Layout from "./components/Layout";
+import MenuCard from "./components/MenuCard"
 import "./App.css";
 
 const App = () => {
@@ -35,6 +36,8 @@ const App = () => {
         <User name="Thu Ta" gender="male" age={35} />
       </Layout>
       {/* App --> test(props) --> Acom (came as a object) */}
+
+      <MenuCard/>
     </div>
   );
 };
